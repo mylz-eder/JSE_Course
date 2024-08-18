@@ -1,0 +1,16 @@
+The Assignments for this session were:
+1-  Create a functional Database interactive program which can do the actions listed in this list:
+1) Add Product
+2) Edit Product
+3) Remove Product
+4) Invoice list
+5) Total
+6) Print Invoice
+0) Exit
+
+you should be able to list the products, add all the prices, and provide a total price for the entire batch of products as well.
+you need to write an entity with {id, name, count, price}
+
+
+# 2- Personal Assignment:
+Create a program, that takes a number given (for example 123400) and returns "One hundred Twenty Three Thousand four hundred" - "یکصد و بیست و سه هزار و چهارصد"
