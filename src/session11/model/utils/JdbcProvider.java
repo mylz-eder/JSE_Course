@@ -15,7 +15,7 @@ public class JdbcProvider {
         basicDataSource.setDriverClassName("oracle.jdbc.driver.OracleDriver");
         basicDataSource.setUrl("jdbc:oracle:thin:@localhost:1521:XE");
         basicDataSource.setUsername("internallogin");
-        basicDataSource.setPassword("internallogin123");
+        basicDataSource.setPassword("internallogin1234");
         basicDataSource.setMinIdle(5);
         basicDataSource.setMaxTotal(20);
         return basicDataSource.getConnection();
