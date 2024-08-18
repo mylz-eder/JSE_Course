@@ -9,5 +9,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="lib2" level="project" />
     <orderEntry type="library" name="lib" level="project" />
+    <orderEntry type="library" name="webcohesion.enunciate.lombok" level="project" />
+    <orderEntry type="library" name="ops4j.pax.jdbc.pool.common" level="project" />
+    <orderEntry type="library" name="google.code.gson" level="project" />
   </component>
 </module>
