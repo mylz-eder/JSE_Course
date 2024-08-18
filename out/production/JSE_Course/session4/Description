@@ -1,0 +1,7 @@
+The Assignments for this session were:
+1 : Write a Person class as an abstract with a student {Name - Age} as the added information. Afterwards, write a list like the following using Switch case
+1) Add Student
+2) Print Age Average
+3) Count
+4) Print All
+5) Exit

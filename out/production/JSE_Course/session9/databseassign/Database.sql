@@ -1,0 +1,11 @@
+-- Creates the main used table
+
+-- CREATE TABLE PRODUCT_TBL
+-- (
+--     id NUMBER PRIMARY KEY ,
+--     name NVARCHAR2(40),
+--     price NUMBER(12)
+-- );
+--
+-- DROP TABLE PRODUCT;
+-- COMMIT;

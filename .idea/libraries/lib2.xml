@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="lib2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/session11/lib/commons-pool2-2.10.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/session11/lib/commons-dbcp2-2.9.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/session11/lib/gson-2.10.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/session11/lib/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/session11/lib/lombok-1.18.24.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/session11/lib/ojdbc8-21.9.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
