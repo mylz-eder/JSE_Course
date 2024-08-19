@@ -1,5 +1,6 @@
 package session11.model.da;
 
+import session11.model.entity.Brand;
 import session11.model.entity.Product;
 import session11.model.utils.JdbcProvider;
 
@@ -21,7 +22,7 @@ public class ProductDa implements AutoCloseable {
     }
 
     public void save(Product product) throws SQLException {
-        product.setId(jdbcProvider.getNextId("PRODUCT_SQL"));
+        product.setId(jdbcProvider.getNextId("PRODUCT_SEQ"));
         preparedStatement = connection.prepareStatement(
                 "INSERT INTO PRODUCT VALUES(?,?,?,?,?)"
         );
@@ -59,7 +60,7 @@ public class ProductDa implements AutoCloseable {
         );
         ResultSet resultSet = preparedStatement.executeQuery();
 
-        List<Product> personList = new ArrayList<>();
+        List<Product> productList = new ArrayList<>();
 
         while (resultSet.next()) {
             Product product =
@@ -67,10 +68,13 @@ public class ProductDa implements AutoCloseable {
                             .builder()
                             .id(resultSet.getInt("ID"))
                             .name(resultSet.getString("NAME"))
+                            .brand(Brand.valueOf(resultSet.getString("BRAND")))
+                            .price(resultSet.getInt("PRICE"))
+                            .count(resultSet.getInt("COUNT"))
                             .build();
-            personList.add(product);
+            productList.add(product);
         }
-        return personList;
+        return productList;
     }
 
     @Override

@@ -59,11 +59,11 @@ public class ProductController implements Initializable {
                                 .build();
                 productda.save(product);
 
-                Alert alert = new Alert(Alert.AlertType.INFORMATION, "Person Saved\n" + product.toString());
+                Alert alert = new Alert(Alert.AlertType.INFORMATION, "Product Saved\n" + product.toString());
                 alert.show();
                 resetForm();
             } catch (Exception e) {
-                Alert alert = new Alert(Alert.AlertType.ERROR, "Person Save Error\n" + e.getMessage());
+                Alert alert = new Alert(Alert.AlertType.ERROR, "Product Save Error\n" + e.getMessage());
                 alert.show();
             }
         });
@@ -127,13 +127,13 @@ public class ProductController implements Initializable {
         try (ProductDa productDa = new ProductDa()) {
             refreshTable(productDa.findAll());
         } catch (Exception e) {
-            Alert alert = new Alert(Alert.AlertType.ERROR, "Find Persons Error\n" + e.getMessage());
+            Alert alert = new Alert(Alert.AlertType.ERROR, "Find Products Error\n" + e.getMessage());
             alert.show();
         }
     }
 
-    private void refreshTable(List<Product> personList) {
-        ObservableList<Product> persons = FXCollections.observableList(personList);
+    private void refreshTable(List<Product> productList) {
+        ObservableList<Product> products = FXCollections.observableList(productList);
 
         columProductId.setCellValueFactory(new PropertyValueFactory<>("id"));
         columProductName.setCellValueFactory(new PropertyValueFactory<>("name"));
@@ -141,6 +141,6 @@ public class ProductController implements Initializable {
         columProductPrice.setCellValueFactory(new PropertyValueFactory<>("price"));
         columProductCount.setCellValueFactory(new PropertyValueFactory<>("Count"));
 
-        productTbl.setItems(persons);
+        productTbl.setItems(products);
     }
 }
