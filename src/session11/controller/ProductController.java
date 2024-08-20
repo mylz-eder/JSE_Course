@@ -54,8 +54,8 @@ public class ProductController implements Initializable {
                                 .builder()
                                 .name(validation.nameValidator(productNameTxt.getText()))
                                 .brand(Brand.valueOf(brandComBox.getSelectionModel().getSelectedItem()))
-                                .count(validation.countValidator(Integer.parseInt(countTxt.getText())))
-                                .price(validation.priceValidator(Integer.parseInt(priceTxt.getText())))
+                                .count(validation.posNumValidator(Integer.parseInt(countTxt.getText())))
+                                .price(validation.posNumValidator(Integer.parseInt(priceTxt.getText())))
                                 .build();
                 productda.save(product);
 
@@ -77,8 +77,8 @@ public class ProductController implements Initializable {
                                 .id(Integer.parseInt(idTxt.getText()))
                                 .name(validation.nameValidator(productNameTxt.getText()))
                                 .brand(Brand.valueOf(brandComBox.getSelectionModel().getSelectedItem()))
-                                .count(validation.countValidator(Integer.parseInt(countTxt.getText())))
-                                .price(validation.priceValidator(Integer.parseInt(priceTxt.getText())))
+                                .count(validation.posNumValidator(Integer.parseInt(countTxt.getText())))
+                                .price(validation.posNumValidator(Integer.parseInt(priceTxt.getText())))
                                 .build();
                 productDa.edit(product);
 

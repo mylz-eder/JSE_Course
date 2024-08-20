@@ -12,16 +12,23 @@ public class Validation {
         }
     }
 
-    public int countValidator(int count) throws Exception {
-        if (count > 0) {
-            return count;
+    public int posNumValidator(int posNum) throws Exception {
+        if (posNum > 0) {
+            return posNum;
         } else {
-            throw new Exception("Invalid Count: Count must be a positive integer. ");
+            throw new Exception("Invalid Value: Number must be a positive integer. ");
         }
     }
-    public int priceValidator(int price) throws Exception {
-        if (price > 0) {
-            return price;
+    public long longvalidation(long longNum) throws Exception {
+        if (longNum > 0) {
+            return longNum;
+        } else {
+            throw new Exception("Invalid Value: Number must be a positive integer. ");
+        }
+    }
+    public int negNumValidator(int negNum) throws Exception {
+        if (negNum > 0) {
+            return negNum;
         } else {
             throw new Exception("Invalid Count: Price must be a positive integer. ");
         }
