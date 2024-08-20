@@ -15,7 +15,7 @@ public class App extends Application {
         primaryStage.setTitle("Product Catalogue");
         primaryStage.show();
 
-        Scene scene1 = new Scene(FXMLLoader.load(getClass().getResource("view/simpanel.fxml")));
+        Scene scene1 = new Scene(FXMLLoader.load(getClass().getResource("view/simpnl/simpanel5.fxml")));
         primaryStage.setScene(scene1);
 
         primaryStage.setTitle("Simcard Catalogue");

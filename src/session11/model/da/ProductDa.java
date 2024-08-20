@@ -1,7 +1,7 @@
 package session11.model.da;
 
-import session11.model.entity.Brand;
-import session11.model.entity.Product;
+import session11.model.entity.product.Brand;
+import session11.model.entity.product.Product;
 import session11.model.utils.JdbcProvider;
 
 import java.sql.Connection;

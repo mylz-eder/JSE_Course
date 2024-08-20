@@ -8,8 +8,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import session11.model.da.ProductDa;
-import session11.model.entity.Brand;
-import session11.model.entity.Product;
+import session11.model.entity.product.Brand;
+import session11.model.entity.product.Product;
 import session11.model.utils.Validation;
 
 import java.net.URL;
